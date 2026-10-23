@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Camily Vitoria, estudante de Informática para Internet.">
+  <title>Camily Vitoria | Portfólio Dev</title>
+
+  <!-- Fonte do Google Fonts e ícones Bootstrap importados via link, como pedido. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#principal">Pular para o conteúdo</a>
+  <header class="cabecalho" id="inicio">
+    <nav class="navegacao contêiner" aria-label="Navegação principal">
+      <a class="logotipo" href="#inicio" aria-label="Camily Vitoria, início">camily<span>.</span></a>
+      <button class="botao-menu" id="botao-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="lista-menu">
+        <i class="bi bi-list" aria-hidden="true"></i>
+      </button>
+      <div class="lista-menu" id="lista-menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#educacao">Educação</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+        <button class="botao-tema" id="botao-tema" type="button" aria-label="Ativar tema escuro">
+          <i class="bi bi-moon-stars-fill" aria-hidden="true"></i><span>Tema</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="principal">
+    <section class="destaque contêiner">
+      <div class="destaque-conteudo aparecer">
+        <p class="sobretitulo"><span class="ponto-status"></span> Estudante de tecnologia</p>
+        <h1>Olá, eu sou <span class="texto-destaque">Camily Vitoria.</span></h1>
+        <p class="texto-digitado"><span id="texto-maquina"></span><span class="cursor" aria-hidden="true">|</span></p>
+        <p class="resumo-destaque">Estou construindo minha jornada na programação, aprendendo a transformar ideias em experiências digitais.</p>
+        <div class="acoes-destaque">
+          <a class="botao botao-principal" href="curriculo.pdf" download><i class="bi bi-download" aria-hidden="true"></i> Baixar meu CV</a>
+          <a class="botao botao-secundario" href="#projetos">Conheça meus estudos <i class="bi bi-arrow-down-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="destaque-redes" aria-label="Atalhos sociais">
+          <span>Conecte-se comigo</span>
+          <a href="#contato" aria-label="Ir para contatos"><i class="bi bi-arrow-down-right-circle" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="destaque-visual aparecer" aria-label="Cartão ilustrativo de código">
+        <div class="cartao-codigo">
+          <div class="janela-codigo"><span></span><span></span><span></span><p>minha-jornada.js</p></div>
+          <div class="codigo-conteudo">
+            <p><span class="codigo-suave">01</span> <span class="codigo-roxo">const</span> estudante = {</p>
+            <p><span class="codigo-suave">02</span> &nbsp; nome: <span class="codigo-verde">'Camily'</span>,</p>
+            <p><span class="codigo-suave">03</span> &nbsp; foco: <span class="codigo-verde">'Front-end'</span>,</p>
+            <p><span class="codigo-suave">04</span> &nbsp; aprendendo: <span class="codigo-verde">'sempre'</span></p>
+            <p><span class="codigo-suave">05</span> };</p>
+            <p class="codigo-final"><span class="codigo-comentario">// um passo de cada vez ✨</span></p>
+          </div>
+          <div class="selo-codigo"><i class="bi bi-code-slash" aria-hidden="true"></i> Aprendendo na prática</div>
+        </div>
+        <div class="forma-decorativa forma-um"></div><div class="forma-decorativa forma-dois"></div>
+      </div>
+    </section>
+
+    <section class="secao contêiner" id="sobre">
+      <div class="cabecalho-secao aparecer"><p class="sobretitulo">01 / SOBRE MIM</p><h2>Aprendendo hoje,<br><span class="texto-destaque">criando o amanhã.</span></h2></div>
+      <div class="sobre-grade">
+        <div class="sobre-texto aparecer">
+          <p>Sou estudante do 1º ano do Ensino Médio Técnico em Informática para Internet pela SESC Escola, em parceria com o SENAC. Com foco em programação, iniciei minha trilha de aprendizado pelo desenvolvimento Front-end.</p>
+          <p>Nos próximos anos, quero ampliar meus conhecimentos em Back-end e desenvolvimento Mobile, construindo uma base para me tornar uma desenvolvedora Full Stack. Gosto de aprender coisas novas, praticar e evoluir a cada projeto.</p>
+        </div>
+        <div class="sobre-destaques aparecer">
+          <article class="mini-cartao"><i class="bi bi-lightbulb" aria-hidden="true"></i><div><h3>Curiosidade</h3><p>Explorar como as coisas funcionam.</p></div></article>
+          <article class="mini-cartao"><i class="bi bi-code-square" aria-hidden="true"></i><div><h3>Prática</h3><p>Aprender construindo e testando.</p></div></article>
+          <article class="mini-cartao"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><div><h3>Evolução</h3><p>Um novo conhecimento por vez.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-suave" id="habilidades">
+      <div class="contêiner">
+        <div class="cabecalho-secao aparecer"><p class="sobretitulo">02 / HABILIDADES</p><h2>Ferramentas que estou<br><span class="texto-destaque">aprendendo a dominar.</span></h2><p class="descricao-secao">Conhecimentos que fazem parte da minha jornada de estudos.</p></div>
+        <div class="habilidades-grade">
+          <article class="habilidade-cartao aparecer"><i class="bi bi-filetype-html" aria-hidden="true"></i><h3>HTML5</h3><p>Estrutura de páginas web.</p></article>
+          <article class="habilidade-cartao aparecer"><i class="bi bi-filetype-css" aria-hidden="true"></i><h3>CSS3</h3><p>Estilo e responsividade.</p></article>
+          <article class="habilidade-cartao aparecer"><i class="bi bi-filetype-js" aria-hidden="true"></i><h3>JavaScript</h3><p>Interatividade para páginas.</p></article>
+          <article class="habilidade-cartao aparecer"><i class="bi bi-braces" aria-hidden="true"></i><h3>Lógica</h3><p>Algoritmos e resolução de problemas.</p></article>
+          <article class="habilidade-cartao aparecer"><i class="bi bi-git" aria-hidden="true"></i><h3>Git</h3><p>Versionamento de código.</p></article>
+          <article class="habilidade-cartao aparecer"><i class="bi bi-github" aria-hidden="true"></i><h3>GitHub</h3><p>Guardar e compartilhar projetos.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao contêiner" id="educacao">
+      <div class="cabecalho-secao aparecer"><p class="sobretitulo">03 / EDUCAÇÃO</p><h2>Minha trilha de <span class="texto-destaque">aprendizado.</span></h2><p class="descricao-secao">Uma formação em etapas, com novos desafios a cada ano.</p></div>
+      <article class="educacao-cartao aparecer">
+        <div class="educacao-topo"><div class="icone-instituicao"><i class="bi bi-mortarboard-fill" aria-hidden="true"></i></div><div><span class="etiqueta">FORMAÇÃO ATUAL</span><h3>Ensino Médio integrado ao Técnico em Informática para Internet</h3><p>SESC Escola • Parceria com SENAC</p></div></div>
+        <div class="linha-tempo">
+          <div class="etapa etapa-atual"><div class="etapa-marcador"><i class="bi bi-code-slash" aria-hidden="true"></i></div><div class="etapa-conteudo"><span class="etapa-status">EM ANDAMENTO</span><h4>1º ano — Front-end</h4><p>HTML, CSS, JavaScript e fundamentos da web.</p></div></div>
+          <div class="etapa"><div class="etapa-marcador"><i class="bi bi-server" aria-hidden="true"></i></div><div class="etapa-conteudo"><span class="etapa-status">PRÓXIMO PASSO</span><h4>2º ano — Back-end</h4><p>Aprender a lógica por trás das aplicações e dos servidores.</p></div></div>
+          <div class="etapa"><div class="etapa-marcador"><i class="bi bi-phone" aria-hidden="true"></i></div><div class="etapa-conteudo"><span class="etapa-status">FUTURO</span><h4>3º ano — Mobile</h4><p>Explorar o desenvolvimento de experiências para dispositivos móveis.</p></div></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="secao secao-suave" id="projetos">
+      <div class="contêiner">
+        <div class="cabecalho-secao aparecer"><p class="sobretitulo">04 / PORTFÓLIO E ESTUDOS</p><h2>Praticando para <span class="texto-destaque">evoluir.</span></h2><p class="descricao-secao">Esta área será atualizada com projetos e repositórios reais desenvolvidos durante o curso.</p></div>
+        <h3 class="titulo-subsecao aparecer">Projetos de Destaque</h3>
+        <div class="projetos-grade">
+          <article class="projeto-cartao aparecer"><div class="projeto-imagem projeto-imagem-um"><i class="bi bi-code-square" aria-hidden="true"></i><span>PROJETO EM BREVE</span></div><div class="projeto-conteudo"><p class="projeto-categoria">PROJETO 01</p><h3>Meu primeiro projeto</h3><p>Adicione aqui um projeto feito em sala de aula, com uma descrição do que ele faz.</p><div class="tecnologias"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="projeto-acoes"><span class="link-indisponivel">Site em breve</span><span class="link-indisponivel">Repositório em breve</span></div></div></article>
+          <article class="projeto-cartao aparecer"><div class="projeto-imagem projeto-imagem-dois"><i class="bi bi-braces" aria-hidden="true"></i><span>PROJETO EM BREVE</span></div><div class="projeto-conteudo"><p class="projeto-categoria">PROJETO 02</p><h3>Exercícios de programação</h3><p>Use este espaço para apresentar outro trabalho ou exercício que você desenvolveu.</p><div class="tecnologias"><span>JavaScript</span><span>Lógica</span></div><div class="projeto-acoes"><span class="link-indisponivel">Site em breve</span><span class="link-indisponivel">Repositório em breve</span></div></div></article>
+        </div>
+        <h3 class="titulo-subsecao titulo-repositorios aparecer">Repositórios de Estudo</h3>
+        <div class="repositorios-lista">
+          <article class="repositorio-item aparecer"><i class="bi bi-folder2-open" aria-hidden="true"></i><div><h4>Trilha de HTML e CSS</h4><p>Anotações e exercícios de estrutura e estilo web.</p></div><span class="em-breve">Link em breve</span></article>
+          <article class="repositorio-item aparecer"><i class="bi bi-filetype-js" aria-hidden="true"></i><div><h4>Trilha de JavaScript</h4><p>Práticas de JavaScript Vanilla e manipulação do DOM.</p></div><span class="em-breve">Link em breve</span></article>
+          <article class="repositorio-item aparecer"><i class="bi bi-diagram-3" aria-hidden="true"></i><div><h4>Lógica e Algoritmos</h4><p>Exercícios de lógica de programação e Portugol.</p></div><span class="em-breve">Link em breve</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao contêiner" id="contato">
+      <div class="contato-bloco aparecer"><p class="sobretitulo">05 / CONTATO</p><h2>Vamos <span class="texto-destaque">conversar?</span></h2><p>Estou no começo da minha jornada na tecnologia e aberta a aprender, trocar ideias e conhecer novas possibilidades.</p><div class="contatos-grade">
+        <!-- Substitua os destinos de exemplo pelos seus contatos reais antes de publicar. -->
+        <a class="contato-cartao contato-email" href="mailto:cv3819820@gmail.com"><i class="bi bi-envelope" aria-hidden="true"></i><span>E-mail</span><i class="bi bi-arrow-up-right seta-contato" aria-hidden="true"></i></a>
+        <a class="contato-cartao contato-github" href="https://github.com/camily-vitoria-braga" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i><span>GitHub</span><i class="bi bi-arrow-up-right seta-contato" aria-hidden="true"></i></a>
+        <a class="contato-cartao contato-instagram" href="https://www.instagram.com/wsfariass__?" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram" aria-hidden="true"></i><span>Instagram</span><i class="bi bi-arrow-up-right seta-contato" aria-hidden="true"></i></a>
+      </div><p class="aviso-contato"><i class="bi bi-info-circle" aria-hidden="true"></i> Atualize os links de contato com seus perfis reais antes da entrega.</p></div>
+    </section>
+  </main>
+
+  <footer class="rodape"><div class="contêiner rodape-conteudo"><a class="logotipo" href="#inicio">camily<span>.</span></a><p>Feito com <i class="bi bi-heart-fill coracao" aria-label="amor"></i> por Camily Vitoria</p><p>© <span id="ano-atual"></span> • Todos os direitos reservados</p></div></footer>
+  <button class="botao-topo" id="botao-topo" aria-label="Voltar ao topo" title="Voltar ao topo"><i class="bi bi-arrow-up" aria-hidden="true"></i></button>
+</body>
+</html>
